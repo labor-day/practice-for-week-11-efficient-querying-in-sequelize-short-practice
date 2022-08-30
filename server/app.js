@@ -167,6 +167,7 @@ app.patch('/authors/:authorId/books', async (req, res, next) => {
     // GET /reviews?firstName=Daisy
     // GET /reviews?lastName=Herzog
     // initial implementation takes 6ms, 2ms, 1ms
+    // adding index via migration takes 2ms, 0ms, 1ms, 0ms
 app.get('/reviews', async (req, res) => {
     const { firstName, lastName } = req.query;
 

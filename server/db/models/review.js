@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       Review.belongsTo(
         models.Book
       );
-      
+
     }
   };
   Review.init({
